@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlType;
  * @author Monika
  */
 @XmlType(propOrder = {"kategId", "katName", "katPreis", "freiePlaetze", "ermaessigung"})
-public final class StructKategorieInformation implements Serializable {
+public final class WebKategorieInformation implements Serializable {
 
     public int kategId = (int) 0;
     public String katName = null;
@@ -18,10 +18,10 @@ public final class StructKategorieInformation implements Serializable {
     public int freiePlaetze = (int) 0;
     public int ermaessigung = (int) 0;
 
-    public StructKategorieInformation() {
+    public WebKategorieInformation() {
     }
 
-    public StructKategorieInformation(int _kategId, String _katName, double _katPreis, int _freiePlaetze, int _ermaessigung) {
+    public WebKategorieInformation(int _kategId, String _katName, double _katPreis, int _freiePlaetze, int _ermaessigung) {
         kategId = _kategId;
         katName = _katName;
         katPreis = _katPreis;
