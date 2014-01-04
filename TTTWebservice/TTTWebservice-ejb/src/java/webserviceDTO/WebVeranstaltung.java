@@ -8,15 +8,15 @@ import javax.xml.bind.annotation.XmlType;
  *
  * @author Monika
  */
-@XmlType(propOrder = {"vid", "vDatum", "vName", "vOrt", "kuenstler", "ermaessigt"})
+@XmlType(propOrder = {"vid", "vDatum", "vName", "vOrt", "vKuenstler", "vErmaessigt"})
 public class WebVeranstaltung implements Serializable {
 
-    public int vid = (int) 0;
-    public String vDatum = null;
-    public String vName = null;
-    public String vOrt = null;
-    public String kuenstler = null;
-    public boolean ermaessigt = false;
+    private int vid = (int) 0;
+    private String vDatum = null;
+    private String vName = null;
+    private String vOrt = null;
+    private String vKuenstler = null;
+    private boolean vErmaessigt = false;
 
     public WebVeranstaltung() {
     }
@@ -26,8 +26,8 @@ public class WebVeranstaltung implements Serializable {
         vDatum = _vDatum;
         vName = _vName;
         vOrt = _vOrt;
-        kuenstler = _kuenstler;
-        ermaessigt = _ermaessigt;
+        vKuenstler = _kuenstler;
+        vErmaessigt = _ermaessigt;
     }
 
     @XmlElement(name = "vid", required = true)
@@ -50,14 +50,14 @@ public class WebVeranstaltung implements Serializable {
         return vOrt;
     }
 
-    @XmlElement(name = "kuenstler", required = true)
-    public String getKuenstler() {
-        return kuenstler;
+    @XmlElement(name = "vKuenstler", required = true)
+    public String getvKuenstler() {
+        return vKuenstler;
     }
 
-    @XmlElement(name = "ermaessigt", required = true)
-    public boolean isErmaessigt() {
-        return ermaessigt;
+    @XmlElement(name = "vErmaessigt", required = true)
+    public boolean isvErmaessigt() {
+        return vErmaessigt;
     }
 
 }

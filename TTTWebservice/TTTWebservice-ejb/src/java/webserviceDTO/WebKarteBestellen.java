@@ -8,35 +8,35 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * @author Monika
  */
-@XmlType(propOrder = {"kartenId", "kundenId", "ermaessigt"})
+@XmlType(propOrder = {"kbKartenId", "kbKundenId", "kbErmaessigt"})
 public class WebKarteBestellen implements Serializable {
 
-    public int kartenId = (int) 0;
-    public int kundenId = (int) 0;
-    public boolean ermaessigt = false;
+    private int kbKartenId = (int) 0;
+    private int kbKundenId = (int) 0;
+    private boolean kbErmaessigt = false;
 
     public WebKarteBestellen() {
     }
 
     public WebKarteBestellen(int _kartenId, int _kundenId, boolean _ermaessigt) {
-        kartenId = _kartenId;
-        kundenId = _kundenId;
-        ermaessigt = _ermaessigt;
+        kbKartenId = _kartenId;
+        kbKundenId = _kundenId;
+        kbErmaessigt = _ermaessigt;
     }
 
-    @XmlElement(name = "kartenId", required = true)
-    public int getKartenId() {
-        return kartenId;
+    @XmlElement(name = "kbKartenId", required = true)
+    public int getKbKartenId() {
+        return kbKartenId;
     }
 
-    @XmlElement(name = "kundenId", required = true)
-    public int getKundenId() {
-        return kundenId;
+    @XmlElement(name = "kbKundenId", required = true)
+    public int getKbKundenId() {
+        return kbKundenId;
     }
 
-    @XmlElement(name = "ermaessigt", required = true)
-    public boolean isErmaessigt() {
-        return ermaessigt;
+    @XmlElement(name = "kbErmaessigt", required = true)
+    public boolean isKbErmaessigt() {
+        return kbErmaessigt;
     }
 
 }

@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(propOrder = {"kartenList"})
 public class WebKategorieKarte implements Serializable {
 
-    public webserviceDTO.WebKarte kartenList[] = null;
+    private webserviceDTO.WebKarte kartenList[] = null;
 
     public WebKategorieKarte() {
     }

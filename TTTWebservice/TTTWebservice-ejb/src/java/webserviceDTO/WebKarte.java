@@ -8,34 +8,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * @author Monika
  */
-@XmlType(propOrder = {"kartenId", "reihe", "platz"})
+@XmlType(propOrder = {"kKartenId", "kReihe", "kPlatz"})
 public class WebKarte implements Serializable {
 
-    public int kartenId = (int) 0;
-    public String reihe = null;
-    public int platz = (int) 0;
+    private int kKartenId = (int) 0;
+    private String kReihe = null;
+    private int kPlatz = (int) 0;
 
     public WebKarte() {
     }
 
     public WebKarte(int _kartenId, String _reihe, int _platz) {
-        kartenId = _kartenId;
-        reihe = _reihe;
-        platz = _platz;
+        kKartenId = _kartenId;
+        kReihe = _reihe;
+        kPlatz = _platz;
     }
     
-    @XmlElement(name = "kartenId", required = true)
-    public int getKartenId() {
-        return kartenId;
+    @XmlElement(name = "kKartenId", required = true)
+    public int getkKartenId() {
+        return kKartenId;
     }
     
-    @XmlElement(name = "reihe", required = true)
-    public String getReihe() {
-        return reihe;
+    @XmlElement(name = "kReihe", required = true)
+    public String getkReihe() {
+        return kReihe;
     }
+
     
-    @XmlElement(name = "platz", required = true)
-    public int getPlatz() {
-        return platz;
+    
+    @XmlElement(name = "kPlatz", required = true)
+    public int getkPlatz() {
+        return kPlatz;
     }
 }

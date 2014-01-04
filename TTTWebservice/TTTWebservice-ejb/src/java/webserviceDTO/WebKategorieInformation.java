@@ -8,49 +8,49 @@ import javax.xml.bind.annotation.XmlType;
  *
  * @author Monika
  */
-@XmlType(propOrder = {"kategId", "katName", "katPreis", "freiePlaetze", "ermaessigung"})
+@XmlType(propOrder = {"katinfKatId", "katinfName", "katinfPreis", "katinfFreiePlaetze", "katinfErmaessigung"})
 public final class WebKategorieInformation implements Serializable {
 
-    public int kategId = (int) 0;
-    public String katName = null;
-    public double katPreis = (double) 0;
+    private int katinfKatId = (int) 0;
+    private String katinfName = null;
+    private double katinfPreis = (double) 0;
 
-    public int freiePlaetze = (int) 0;
-    public int ermaessigung = (int) 0;
+    private int katinfFreiePlaetze = (int) 0;
+    private int katinfErmaessigung = (int) 0;
 
     public WebKategorieInformation() {
     }
 
     public WebKategorieInformation(int _kategId, String _katName, double _katPreis, int _freiePlaetze, int _ermaessigung) {
-        kategId = _kategId;
-        katName = _katName;
-        katPreis = _katPreis;
-        freiePlaetze = _freiePlaetze;
-        ermaessigung = _ermaessigung;
+        katinfKatId = _kategId;
+        katinfName = _katName;
+        katinfPreis = _katPreis;
+        katinfFreiePlaetze = _freiePlaetze;
+        katinfErmaessigung = _ermaessigung;
     }
 
-    @XmlElement(name = "kategId", required = true)
-    public int getKategId() {
-        return kategId;
+    @XmlElement(name = "katinfKatId", required = true)
+    public int getKatinfKatId() {
+        return katinfKatId;
     }
 
-    @XmlElement(name = "katName", required = true)
-    public String getKatName() {
-        return katName;
+    @XmlElement(name = "katinfName", required = true)
+    public String getKatinfName() {
+        return katinfName;
     }
 
-    @XmlElement(name = "katPreis", required = true)
-    public double getKatPreis() {
-        return katPreis;
+    @XmlElement(name = "katinfPreis", required = true)
+    public double getKatinfPreis() {
+        return katinfPreis;
     }
 
-    @XmlElement(name = "freiePlaetze", required = true)
-    public int getFreiePlaetze() {
-        return freiePlaetze;
+    @XmlElement(name = "katinfFreiePlaetze", required = true)
+    public int getKatinfFreiePlaetze() {
+        return katinfFreiePlaetze;
     }
 
-    @XmlElement(name = "ermaessigung", required = true)
-    public int getErmaessigung() {
-        return ermaessigung;
+    @XmlElement(name = "katinfErmaessigung", required = true)
+    public int getKatinfErmaessigung() {
+        return katinfErmaessigung;
     }
 }

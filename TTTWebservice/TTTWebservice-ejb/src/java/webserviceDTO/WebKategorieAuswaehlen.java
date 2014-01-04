@@ -8,21 +8,21 @@ import javax.xml.bind.annotation.XmlType;
  *
  * @author Monika
  */
-@XmlType(propOrder = {"id"})
+@XmlType(propOrder = {"katausId"})
 public class WebKategorieAuswaehlen implements Serializable {
 
-    public int id = (int) 0;
+    private int katausId = (int) 0;
 
     public WebKategorieAuswaehlen() {
     }
 
     public WebKategorieAuswaehlen(int _id) {
-        id = _id;
+        katausId = _id;
     }
 
-    @XmlElement(name = "id", required = true)
-    public int getId() {
-        return id;
+    @XmlElement(name = "katausId", required = true)
+    public int getKatausId() {
+        return katausId;
     }
 
 }
